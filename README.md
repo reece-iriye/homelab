@@ -1,19 +1,15 @@
 # Homelab
 Documenting my homelab process as I go. Including set-up processes and code snippets.
 
-## Hardware Set-Up
+## Raspberry Pi's Initial Set-Up
+
+### Hardware Set-Up
 
 will fill in more later...
 
-## OS Set-Up for NVME SSD
+### OS Set-Up for NVME SSD
 
-Plug the bad boy in. 
-
-Unsure if this was needed, but add this line to `/boot/firmware/config.txt`:
-```bash
-
-```
-
+#### Download Latest Pi-OS Machine Image
 
 Downloading my latest version of Pi OS Lite based on Debian Trixie.
 ```bash
@@ -25,7 +21,7 @@ Then sync OS image with NVME SSD volume:
 xzcat /tmp/raspios.img.xz | sudo dd of=/dev/nvme0n1 bs=4M status=progress
 ```
 
-### Set Up Boot Partition
+#### Set Up Boot Partition
 
 Now we need to run so
 
@@ -52,7 +48,7 @@ Then I unmounted the boot volume.
 sudo umount /mnt/ssdboot
 ```
 
-### Set Up Root Partition
+#### Set Up Root Partition
 
 I need to set up SSH configurations inside my root partition so that I can SSH successfully into the Raspberry Pi when officially transferring my boot partition and moving from the SD Card to the NVME SSD drive.
 
@@ -79,7 +75,7 @@ Now finally unmounting the root volume.
 sudo umount /mnt/ssdroot
 ```
 
-### Set Boot Order for NVMe
+#### Set Boot Order for NVMe
 
 Now I run this command to bring up the Raspberry Pi TUI config editor.
 ```bash
@@ -90,7 +86,7 @@ Go to **Advanced Options -> Boot Order** and select **NVMe/SSD Boot**.
 
 Then, when prompted to reboot, reboot the Pi.
 
-### Home Run Stretch
+#### Home Run Stretch
 
 When SSH'ing into the newly booted Raspberry Pi, you'll notice that it will fail because the static hostname was changed to `raspberrypi` by default. So I SSH'd into it using the following command, using my private key file on my Mac.
 
@@ -157,3 +153,6 @@ Finally, run a system upgrade.
 ```bash
 sudo apt update && sudo apt full-upgrade -y
 ```
+
+### Note
+Now, I repeat the above steps for my 2nd Raspberry Pi. This way, I have faster IOPS and a bigger storage drive for each of my Pi's.
