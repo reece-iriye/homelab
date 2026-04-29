@@ -1,4 +1,4 @@
-# Homelab
+# Reece's Homelab
 Documenting my homelab process as I go. Including set-up processes and code snippets.
 
 ## Raspberry Pi's Initial Set-Up
