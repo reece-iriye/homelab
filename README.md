@@ -3,7 +3,7 @@ Documenting my homelab process as I go. Including set-up processes and code snip
 
 ## Hardware
 
-I bought most my hardware in April 2025 before the world went insane and RAM prices skyrocketed. The 16GB Raspberry Pi 5 was $119.99 and 8B one was $79.99. As of May 2026, those prices are now $299.99 and $169.99 respectively. 
+I bought most my hardware in April 2025 before the world went insane and RAM prices skyrocketed. The 16GB Raspberry Pi 5 was $119.99 and 8GB one was $79.99. As of May 2026, those prices are now $299.99 and $169.99 respectively. 
 
 ### Integrated
 
