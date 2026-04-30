@@ -1,6 +1,15 @@
 # Reece's Homelab
 Documenting my homelab process as I go. Including set-up processes and code snippets.
 
+## Hardware
+- l
+- l
+- l
+- l
+- l
+- l
+- 1x eero router
+
 ## Raspberry Pi's Initial Set-Up
 
 ### Hardware Set-Up
