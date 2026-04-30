@@ -11,7 +11,7 @@ I bought most my hardware in April 2025 before the world went insane and RAM pri
 - 1x Raspberry Pi 5 8GB RAM | [MicroCenter](https://www.microcenter.com/product/673711/5;_ARM_Cortex_A76_Quad_Core_Processor;_8GB_LPDDR4X_RAM?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250405)
 - 2x Raspberry Pi 5 Active Cooler | [MicroCenter](https://www.microcenter.com/product/671930/5_Active_Cooler?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250411)
 - 2x Inland TN320 256GB SSD NVMe PCIe Gen 3.0x4 M.2 2280 3D NAND TLC Internal Solid State Drive | [MicroCenter](https://www.microcenter.com/support/661858/TN320_256GB_SSD_NVMe_PCIe_Gen_30x4_M2_2280_3D_NAND_TLC_Internal_Solid_State_Drive?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250405)
-- 1x 52Pi M.2 NVME M-KEY PoE+ Hat for Raspberry Pi 5 | [MicroCenter](https://www.microcenter.com/support/688932/M2_NVME_M-KEY_PoE_Hat_for_Raspberry_Pi_5?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250405)
+- 1x 52Pi M.2 NVMe M-KEY PoE+ Hat for Raspberry Pi 5 | [MicroCenter](https://www.microcenter.com/support/688932/M2_NVME_M-KEY_PoE_Hat_for_Raspberry_Pi_5?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250405)
 - 1x TP-LINK TL-SG605P 5-Port Gigabit Desktop Switch with 4-Port PoE+ | [MicroCenter](https://www.microcenter.com/product/693930/TL-SG605P_5-Port_Gigabit_Desktop_Switch_with_4-Port_PoE?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250405)
 - 1x Inland 1 Ft. CAT 6 Snagless, Cross UTP, Bare Copper Ethernet Cables 5-Pack - White | [MicroCenter](https://www.microcenter.com/product/638732/1_Ft_CAT_6_Snagless,_Cross_UTP,_Bare_Copper_Ethernet_Cables_5-Pack_-_White?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250405)
 - 1x Gateway eero Pro 6E | (Comes with my Frontier WiFi Plan)
@@ -26,7 +26,7 @@ I bought most my hardware in April 2025 before the world went insane and RAM pri
 
 will fill in more later...
 
-### OS Set-Up for NVME SSD
+### OS Set-Up for NVMe SSD
 
 #### Download Latest Pi-OS Machine Image
 
@@ -35,7 +35,7 @@ Downloading my latest version of Pi OS Lite based on Debian Trixie.
 curl -L -o /tmp/raspios.img.xz https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2026-04-21/2026-04-21-raspios-trixie-arm64-lite.img.xz
 ```
 
-Then sync OS image with NVME SSD volume:
+Then sync OS image with NVMe SSD volume:
 ```bash
 xzcat /tmp/raspios.img.xz | sudo dd of=/dev/nvme0n1 bs=4M status=progress
 ```
@@ -69,7 +69,7 @@ sudo umount /mnt/ssdboot
 
 #### Set Up Root Partition
 
-I need to set up SSH configurations inside my root partition so that I can SSH successfully into the Raspberry Pi when officially transferring my boot partition and moving from the SD Card to the NVME SSD drive.
+I need to set up SSH configurations inside my root partition so that I can SSH successfully into the Raspberry Pi when officially transferring my boot partition and moving from the SD Card to the NVMe SSD drive.
 
 ```bash
 sudo mkdir -p /mnt/ssdroot
