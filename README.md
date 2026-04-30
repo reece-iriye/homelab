@@ -2,13 +2,23 @@
 Documenting my homelab process as I go. Including set-up processes and code snippets.
 
 ## Hardware
-- l
-- l
-- l
-- l
-- l
-- l
-- 1x eero router
+
+I bought most my hardware in April 2025 before the world went insane and RAM prices skyrocketed. The 16GB Raspberry Pi 5 was $119.99 and 8B one was $79.99. As of May 2026, those prices are now $299.99 and $169.99 respectively. 
+
+### Integrated
+
+- 1x Raspberry Pi 5 16GB RAM | [MicroCenter](https://www.microcenter.com/product/702590/raspberry-pi-5?rd=1)
+- 1x Raspberry Pi 5 8GB RAM | [MicroCenter](https://www.microcenter.com/product/673711/5;_ARM_Cortex_A76_Quad_Core_Processor;_8GB_LPDDR4X_RAM?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250405)
+- 2x Raspberry Pi 5 Active Cooler | [MicroCenter](https://www.microcenter.com/product/671930/5_Active_Cooler?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250411)
+- 2x Inland TN320 256GB SSD NVMe PCIe Gen 3.0x4 M.2 2280 3D NAND TLC Internal Solid State Drive | [MicroCenter](https://www.microcenter.com/support/661858/TN320_256GB_SSD_NVMe_PCIe_Gen_30x4_M2_2280_3D_NAND_TLC_Internal_Solid_State_Drive?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250405)
+- 1x 52Pi M.2 NVME M-KEY PoE+ Hat for Raspberry Pi 5 | [MicroCenter](https://www.microcenter.com/support/688932/M2_NVME_M-KEY_PoE_Hat_for_Raspberry_Pi_5?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250405)
+- 1x TP-LINK TL-SG605P 5-Port Gigabit Desktop Switch with 4-Port PoE+ | [MicroCenter](https://www.microcenter.com/product/693930/TL-SG605P_5-Port_Gigabit_Desktop_Switch_with_4-Port_PoE?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250405)
+- 1x Inland 1 Ft. CAT 6 Snagless, Cross UTP, Bare Copper Ethernet Cables 5-Pack - White | [MicroCenter](https://www.microcenter.com/product/638732/1_Ft_CAT_6_Snagless,_Cross_UTP,_Bare_Copper_Ethernet_Cables_5-Pack_-_White?MccGuid=4527d294-39ed-4401-8d14-95fe686df1a3&utm_source=instorereceipt&utm_medium=email&utm_campaign=T0048&utm_content=20250405)
+- 1x Gateway eero Pro 6E | (Comes with my Frontier WiFi Plan)
+
+### To Do
+
+- 1x NVIDIA GeForce RTX 2070 Super | Got it from a co-worker
 
 ## Raspberry Pi's Initial Set-Up
 
