@@ -47,7 +47,7 @@ sudo touch /mnt/ssdboot/ssh
 
 Then I created my user account, replacing `mypassword` here with my actual password.
 ```bash
-echo "reece:$(echo 'yourpassword' | openssl passwd -6 -stdin)" | sudo tee /mnt/ssdboot/userconf.txt
+echo "reece:$(echo 'mypassword' | openssl passwd -6 -stdin)" | sudo tee /mnt/ssdboot/userconf.txt
 ```
 
 I'm using Ethernet so I don't need to transfer over my network config. 
